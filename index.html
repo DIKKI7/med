@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Я Дима - Натуральный мед</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Flying Bee -->
+    <div class="bee">
+        <div class="bee-body">
+            <div class="bee-stripe"></div>
+            <div class="bee-stripe"></div>
+            <div class="bee-stripe"></div>
+        </div>
+        <div class="bee-wing bee-wing-left"></div>
+        <div class="bee-wing bee-wing-right"></div>
+        <div class="bee-eye"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">Я Дима</h1>
+                <nav class="nav">
+                    <button class="cart-btn" id="cartBtn">
+                        <span>Корзина</span>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-modal-content">
+            <span class="close-cart">&times;</span>
+            <h2>Ваша корзина</h2>
+            <div class="cart-items" id="cartItems"></div>
+            <div class="cart-total">
+                <strong>Итого: <span id="cartTotal">0</span> ₽</strong>
+            </div>
+            <button class="checkout-btn" id="checkoutBtn">Оформить заказ</button>
+            <button class="continue-shopping" id="continueShopping">Продолжить покупки</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-video">
+                <video autoplay muted loop playsinline>
+                    <source src="https://cdn.shopify.com/videos/c/o/v/1/cd1c0c5c0b34e4a0a0a0a0a0a0a0a0a0.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает HTML5 видео.
+                </video>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section class="products">
+            <div class="container">
+                <!-- Product 1: Summer Honey -->
+                <div class="product-card">
+                    <div class="product-images">
+                        <div class="product-image active" style="background-image: url('https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=800')"></div>
+                        <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=800')"></div>
+                        <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=800')"></div>
+                        <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=800')"></div>
+                        <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=800')"></div>
+                        <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=800')"></div>
+                        <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=800')"></div>
+                    </div>
+                    <div class="product-info">
+                        <h2>Летний мед - 227г/8oz</h2>
+                        <p class="price">650 ₽</p>
+                        <p class="description">
+                            Этот мед был собран пчелами в течение летних месяцев здесь, в России, и изготовлен из широкого разнообразия летних цветущих растений, окружающих ульи. После сбора мед выкачивается из рамок, слегка фильтруется и разливается в банки. Это самый свежий мед!
+                        </p>
+                        <p class="description">
+                            Мои любимые способы насладиться медом - это утренний чай или кофе, с сыром и крекерами или просто чайная ложка сама по себе, где вы можете по-настоящему почувствовать вкус и текстуру. Наслаждайтесь самой замечательной пищей, которую дает нам природа!
+                        </p>
+                        <p class="note">
+                            <strong>Обратите внимание, стоимость доставки одинакова для до четырех банок меда</strong>, и чтобы узнать больше о том, как производится мед, посмотрите видео ниже.
+                        </p>
+                        <div class="quantity-selector">
+                            <button class="qty-btn" data-action="decrease" data-product="summer-honey">−</button>
+                            <input type="number" class="qty-input" id="summer-honey-qty" value="0" min="0" readonly>
+                            <button class="qty-btn" data-action="increase" data-product="summer-honey">+</button>
+                        </div>
+                        <button class="add-to-cart-btn" data-product="summer-honey" data-name="Летний мед - 227г/8oz" data-price="650">
+                            Добавить в корзину
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 2: Soft Set Honey -->
+                <div class="product-card">
+                    <div class="product-images">
+                        <div class="product-image active" style="background-image: url('https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=800')"></div>
+                        <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=800')"></div>
+                        <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=800')"></div>
+                        <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=800')"></div>
+                    </div>
+                    <div class="product-info">
+                        <h2>Крем-мед - 227г/8oz</h2>
+                        <p class="price">650 ₽</p>
+                        <p class="description">
+                            Крем-мед - это просто мед, который кристаллизовался в очень мелкие гранулы. Ничего не добавляется, это 100% мед. Сначала я измельчаю небольшую партию уже кристаллизованного меда в ступке. Как только он становится гладким и мягким, я добавляю его в большую партию жидкого меда. В течение недели или около того при более низких температурах большая партия теперь застывает вокруг того же размера кристаллов, что и "семенной" мед. Обязательно попробуйте ложку этого меда саму по себе, чтобы оценить замечательную гладкую текстуру и вкус.
+                        </p>
+                        <p class="note">
+                            <strong>Обратите внимание, стоимость доставки одинакова для до четырех банок меда</strong>, и чтобы узнать больше о том, как производится мед, посмотрите видео ниже.
+                        </p>
+                        <div class="quantity-selector">
+                            <button class="qty-btn" data-action="decrease" data-product="soft-set-honey">−</button>
+                            <input type="number" class="qty-input" id="soft-set-honey-qty" value="0" min="0" readonly>
+                            <button class="qty-btn" data-action="increase" data-product="soft-set-honey">+</button>
+                        </div>
+                        <button class="add-to-cart-btn" data-product="soft-set-honey" data-name="Крем-мед - 227г/8oz" data-price="650">
+                            Добавить в корзину
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 3: Beeswax -->
+                <div class="product-card">
+                    <div class="product-images">
+                        <div class="product-image active" style="background-image: url('https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?w=800')"></div>
+                        <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?w=800')"></div>
+                        <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?w=800')"></div>
+                        <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?w=800')"></div>
+                    </div>
+                    <div class="product-info">
+                        <h2>100% пчелиный воск для творческих проектов 1oz/28г блок</h2>
+                        <p class="price">250 ₽</p>
+                        <p class="description">
+                            Этот пчелиный воск поступил из моих ульев этим летом. Воск прошел несколько этапов фильтрации перед тем, как быть разлитым в формы по 1oz/28г. Я узнал, что существует так много применений для пчелиного воска. От полировки мебели до вощения тетивы лука лучника. Другие применения включают запечатывание писем, изготовление свечей, проекты по работе с кожей, даже запечатывание сыра и бутылок домашнего пива! Пожалуйста, дайте мне знать, для чего вы его используете.
+                        </p>
+                        <div class="quantity-selector">
+                            <button class="qty-btn" data-action="decrease" data-product="beeswax">−</button>
+                            <input type="number" class="qty-input" id="beeswax-qty" value="0" min="0" readonly>
+                            <button class="qty-btn" data-action="increase" data-product="beeswax">+</button>
+                        </div>
+                        <button class="add-to-cart-btn" data-product="beeswax" data-name="100% пчелиный воск для творческих проектов 1oz/28г блок" data-price="250">
+                            Добавить в корзину
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How it's made Section -->
+        <section class="how-its-made">
+            <div class="container">
+                <h2>Как это делается</h2>
+                <div class="video-container">
+                    <video controls>
+                        <source src="https://cdn.shopify.com/videos/c/o/v/1/cd1c0c5c0b34e4a0a0a0a0a0a0a0a0.mp4" type="video/mp4">
+                        Ваш браузер не поддерживает HTML5 видео.
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about">
+            <div class="container">
+                <h2>Привет, я Дима</h2>
+                <div class="about-content">
+                    <p>
+                        Мне повезло вырасти в сельской местности на краю леса, что позволило мне проводить много времени на свежем воздухе, ходить на рыбалку, собирать грибы и изучать деревья, растения и животных, которые меня окружали. У меня также есть интерес к еде и кулинарии, так что неудивительно, что я нашел себе хобби, которое включает в себя и природу, и еду.
+                    </p>
+                    <p>
+                        4 года назад, летом 2021 года, дружелюбный пчеловод дал мне коробку с пчелами. Я привез их домой в багажнике своей машины, и мое пчеловодческое путешествие началось. За последние несколько лет я научился содержать пчел и собирать мед, и так приятно делиться этим медом с другими.
+                    </p>
+                    <p>
+                        Однако пчеловодство - это сезонная работа и в основном летняя деятельность, что означает, что я могу наслаждаться временем вдали от пчел в зимние месяцы, где вы, вероятно, найдете меня катающимся на лыжах в горах!
+                    </p>
+                    <p>
+                        У меня также есть множество других хобби, и мне трудно все уместить! Я люблю играть в ракеточные виды спорта, такие как теннис и бадминтон. Я также люблю садоводство и каждый год пытаюсь вырастить широкий ассортимент фруктов и овощей в своем саду.
+                    </p>
+                    <p>
+                        В любом случае, спасибо за посещение моего сайта, и я надеюсь, вам понравится мед!
+                    </p>
+                    <p class="signature">— Дима</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq">
+            <div class="container">
+                <h2>Нужна помощь?</h2>
+                <div class="faq-content">
+                    <div class="faq-item">
+                        <h3>Когда я получу свой мед?</h3>
+                        <p>
+                            Я буду упаковывать и отправлять заказы каждый понедельник и четверг недели, затем пожалуйста, подождите 1-4 дня (в зависимости от выбранной вами скорости доставки при оформлении заказа) для прибытия вашего меда.
+                        </p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Вы отправляете за пределы России?</h3>
+                        <p>
+                            К сожалению, из-за определенных решений, принятых в последние годы, отправка меда за пределы России стала невероятно сложной - На данный момент это просто невозможно, но я надеюсь исправить это когда-нибудь!
+                        </p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Нужно связаться?</h3>
+                        <p>
+                            Напишите мне на email: <a href="mailto:info@yadima.ru">info@yadima.ru</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026, Я Дима</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">YouTube</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
